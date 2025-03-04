@@ -3,19 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --orange-gradient: linear-gradient(45deg, #FF4D00, #FFA500);
+  --mountain-bg: linear-gradient(180deg, #FF8C00, #FFD700);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+/* @layer utilities {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
   }
+
+  .brightness-75 {
+    filter: brightness(0.75);
+  }
+} */
+
+/* filepath: /d:/EMB GLOBAL/projects/mistral/mistralai/styles/globals.css .bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40% 40%;
+} */
+
+.gradient-text {
+  background: var(--orange-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* 
+.mountain-background {
+  background: var(--mountain-bg);
+  position: relative;
+  overflow: hidden;
 }
+
+.mountain-background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: url('/mountains.svg') repeat-x;
+  background-size: contain;
+} */

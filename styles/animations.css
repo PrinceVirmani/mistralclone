@@ -1,0 +1,15 @@
+.fade-up {
+    @apply transition-all duration-500 ease-out;
+}
+
+.fade-up:hover {
+    @apply -translate-y-1;
+}
+
+.gradient-hover {
+    @apply transition-all duration-300;
+}
+
+.gradient-hover:hover {
+    @apply brightness-110;
+}
